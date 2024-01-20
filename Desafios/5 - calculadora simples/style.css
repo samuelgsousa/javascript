@@ -1,0 +1,28 @@
+@charset "UTF-8";   
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+:root{
+    font-family: 'League Spartan';
+}
+
+body > .calculadora{
+    max-width: 600px;
+    margin: auto;
+}
+
+div{
+    margin: 10px;
+}
+
+.calculadora > .botoes > .operadores > button{
+    width: 60px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+.operadores{
+    width: 300px;
+    background-color: hsl(219, 54%, 50%);
+}

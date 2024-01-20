@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Calculator app</title>
+</head>
+
+<body>
+
+  <div class="calculadora">
+    <span>calc</span>
+    <input type="range" min="1" max="3" step="1" id="tema"/>
+  
+
+  <input type="text" id="res" oninput="validarExpressao(this)" placeholder="">
+
+  <div class="botoes">
+
+    <div class="operadores">
+      <button type="button" class="numerais" value="7" onclick="adicionarExpressao(this.value)">7</button>
+      <button type="button" class="numerais" value="8" onclick="adicionarExpressao(this.value)">8</button>
+      <button type="button" class="numerais" value="9" onclick="adicionarExpressao(this.value)">9</button>
+
+      <button type="button" class="numerais" value="del" onclick="del()">DEL</button> <!-- o único que vai executar uma função diferente -->
+
+      <button type="button" class="numerais" value="4" onclick="adicionarExpressao(this.value)">4</button>
+      <button type="button" class="numerais" value="5"onclick="adicionarExpressao(this.value)">5</button>
+      <button type="button" class="numerais" value="6"onclick="adicionarExpressao(this.value)">6</button>
+      <button type="button" class="numerais" value="+" onclick="adicionarExpressao(this.value)">+</button>
+      <button type="button" class="numerais" value="1" onclick="adicionarExpressao(this.value)">1</button>
+      <button type="button" class="numerais" value="2"onclick="adicionarExpressao(this.value)">2</button>
+      <button type="button" class="numerais" value="3"onclick="adicionarExpressao(this.value)">3</button>
+      <button type="button" class="numerais" value="-" onclick="adicionarExpressao(this.value)">-</button>
+      <button type="button" class="numerais" value="." onclick="adicionarExpressao(this.value)">.</button>
+      <button type="button" class="numerais" value="0" onclick="adicionarExpressao(this.value)">0</button>
+      <button type="button" class="numerais" value="/" onclick="adicionarExpressao(this.value)">/</button>
+      <button type="button" class="numerais" value="x" onclick="adicionarExpressao(this.value)">x</button>
+    </div>
+
+    <div class="calcular">
+      <button type="button" onclick="resetar()">RESET</button>
+      <button type="button" onclick="calcular()">=</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
