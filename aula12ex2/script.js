@@ -13,7 +13,32 @@ function verificar(){
         tamanho_div.style.height = "400px"
 
         texto_resultado.innerHTML = `Detectamos ${sexo.value} com ${idade} anos`
-        img.src = 'crianca_menino.jpg'
+
+        if(sexo.value == "Homem"){
+        if(idade < 14){
+            img.src = 'crianca_menino.jpg'
+        } else if (idade < 21){
+            img.src = 'jovem_homem.jpg'
+        } else if (idade < 60){
+            img.src = 'adulto_homem.jpg'
+        } else if (idade >= 60) {
+            img.src = 'idoso_homem.jpg'
+        }
+
+    } else if(sexo.value == "Mulher"){
+        if(idade < 14){
+            img.src = 'crianca_menina.jpg'
+        } else if (idade < 21){
+            img.src = 'jovem_mulher.jpg'
+        } else if (idade < 60){
+            img.src = 'adulta_mulher.jpg'
+        } else if (idade >= 60) {
+            img.src = 'idosa_mulher.jpg'
+        }
+    }
+
+
+        img.style.visibility = "visible"
         
     } else{
         texto_resultado.innerText = "Preencha todos os campos!!!"
