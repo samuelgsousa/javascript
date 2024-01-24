@@ -12,7 +12,7 @@ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matche
 
 let expressao = document.querySelector('input.res')
 
-let calcular = () =>{
+function calcular(){
     if(expressao.value == ""){
         window.alert('Digite algum valor para continuar')
     } else{
@@ -32,33 +32,24 @@ let calcular = () =>{
     }
 }
 }
-let validarExpressao = input => input.value = input.value.replace(/[^0-9x+*\/.\-]/g, '')
-    // essa função serve para impedir que o usuário adicione valores que não sejam os caractéres específicos, que são números, letra x e operadores
-    // a flag "g" garante que todos os caracteres indesejados na string sejam removidos, não apenas o primeiro encontrado.
+function validarExpressao(input){
+    input.value = input.value.replace(/[^0-9x+*\/.\-]/g, '')
 
+    // a flag "g" garante que todos os caracteres indesejados na string sejam removidos, não apenas o primeiro encontrado.
+}
 
 let adicionarExpressao = (adc) => expressao.value += adc
+function adicionarExpressao(adc){
+    expressao.value += adc
+    //essa função adiciona o valor do botão que o usuário clicar na caixa de texto. adc é o parâmetro que ele recebe de cada um dos botões (que no caso, é o valor deles)
+}
+function del(){
+    expressao.value = expressao.value.slice(0, -1); //0 é quantos caracteres vc tira no começo e -1 quantos tira do final
+}
 
-//essa função adiciona o valor do botão que o usuário clicar na caixa de texto. adc é o parâmetro que ele recebe de cada um dos botões (que no caso, é o valor deles)
+function resetar(){
+    expressao.value = null
+}
 
 
-let del = () => expressao.value = expressao.value.slice(0, -1);
-
-//0 é quantos caracteres vc tira no começo e -1 quantos tira do final
-
-/* $('.del').click(() => {
-    let valorAtual = $('.res').val()
-    $('.res').val(valorAtual.slice(0, -1))
-}) */ //versão com jQuery
-
-$('.reset').click(() => $('.res').val(null)) //resetar em jQuarry
-
-/*
-outra sintaxe válida e mais flexível para o reset seria:
-$(document).ready(function() {
-    $('.reset').on('click', function() {
-        $('.res').val('');
-    });
-});
-*/
-
+//esse código existe apenas para comparar como eu fiz as funções antes e depois do arrow funcion

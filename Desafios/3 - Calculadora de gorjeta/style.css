@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    font-family: 'Space Mono';
+    font-size: larger;
+    font-weight: 800;
+    
+}
+
+img{
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: small;
+}
+
+#valores > p {
+    color:hsl(186, 14%, 43%)
+}
+
+body{
+    background-color: hsl(180, 53%, 76%);
+
+}
+
+div{
+    border-radius: 10px;
+}
+
+#calculadora{
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    max-width: 700px;
+    min-height: 400px;
+    max-height: 800px;
+    padding: 30px;
+}
+
+#bill{
+    background-image: url(icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+#valores{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    
+}
+input[type='number']{
+    width: 225px;
+    height: 25px;
+    background-color: hsl(180, 45%, 90%);
+    border-radius: 5px;
+    border-color: transparent;
+    color:hsl(183, 100%, 15%);
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: medium;
+    font-weight: 1000;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;    
+}
+
+input[type='radio']{
+    display: none;
+}
+
+label:hover, #tip_custom:hover{
+    background-color: hsl(185, 60%, 71%);
+    color: hsl(183, 100%, 15%);
+}
+.destacada{
+    background-color: hsl(170, 94%, 52%);
+    color: hsl(183, 100%, 15%);
+}
+#tip_custom.c_destacada{
+    background-color: hsl(170, 94%, 52%);
+    color: hsl(183, 100%, 15%);
+}
+
+#tip_custom:hover{
+    border-color: hsl(187, 8%, 61%);
+}
+
+label{
+    display: inline-block;
+    background-color: hsl(183, 100%, 15%);
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+#tip_custom{ /*input number*/
+    width: 70px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: hsl(187, 8%, 61%);
+    padding: 0px; 
+    border-width: 1px;
+    font-family: 'Space Mono';
+    font-size: larger;
+    font-weight: 500;   
+    vertical-align: middle;
+    text-align: center;
+    color: hsl(187, 8%, 61%)
+    
+}
+
+#people{
+    background-image: url(icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    
+}
+
+/*a partir daqui é a segunda parte. o Segundo quadrado*/
+
+#resultado{
+    display: inline-block;
+    background-color: hsl(183, 100%, 15%);
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+    padding: 25px;
+    box-sizing: border-box;
+
+}
+
+#resultado > div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#v_resultados{
+    text-align: right;
+}
+#res_tip, #res_total{
+    font-size: 30px;
+    margin-top: 200px;
+    color: hsl(170, 94%, 52%);
+}
+
+span {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 10px;
+    
+}
+
+.sublinhado{
+    font-size: 10px;
+    color: rgb(182, 182, 182);
+    margin: 0;
+}
+
+input[type='button']{
+    margin-top: 90px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: hsla(183, 67%, 62%, 0.411);
+    color: hsla(183, 67%, 62%, 0.24);
+    width: 250px;
+    height: 50px;
+    font-family: 'Space Mono';
+    font-size: larger;
+    font-weight: 800;
+}
+#resetar.clicavel{
+    background-color: hsl(170, 94%, 52%);
+    color: hsl(183, 100%, 15%);
+}
+

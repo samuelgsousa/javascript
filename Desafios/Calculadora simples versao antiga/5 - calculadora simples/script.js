@@ -41,24 +41,10 @@ let adicionarExpressao = (adc) => expressao.value += adc
 
 //essa função adiciona o valor do botão que o usuário clicar na caixa de texto. adc é o parâmetro que ele recebe de cada um dos botões (que no caso, é o valor deles)
 
+let del= () => expressao.value = expressao.value.slice(0, -1); //0 é quantos caracteres vc tira no começo e -1 quantos tira do final
 
-let del = () => expressao.value = expressao.value.slice(0, -1);
 
-//0 é quantos caracteres vc tira no começo e -1 quantos tira do final
+let resetar = () => expressao.value = null
 
-/* $('.del').click(() => {
-    let valorAtual = $('.res').val()
-    $('.res').val(valorAtual.slice(0, -1))
-}) */ //versão com jQuery
 
-$('.reset').click(() => $('.res').val(null)) //resetar em jQuarry
-
-/*
-outra sintaxe válida e mais flexível para o reset seria:
-$(document).ready(function() {
-    $('.reset').on('click', function() {
-        $('.res').val('');
-    });
-});
-*/
 

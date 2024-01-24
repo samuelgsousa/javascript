@@ -1,0 +1,64 @@
+@charset "UTF-8";   
+
+/*classes para cores*/
+:root{
+        --CorFundo: hsl(222, 26%, 31%);
+        --CorFonte: hsl(221, 14%, 31%);
+        --CorFonteSecundaria: white;
+        --CorFundoSeletor: rgba(0, 0, 0, 0.315);
+        --CorSeletor: hsl(6, 79%, 60%);
+        --FundoRes: hsl(224, 36%, 15%);
+        --Botoes: hsl(223, 31%, 20%);
+        --CorBotoes: white;
+        --CorDel: hsl(225, 48%, 72%);
+        --SombraPadrao: #888888;
+        --SombraDel: hsl(227, 18%, 48%);
+        --SombraEqual: hsl(6, 53%, 39%);
+        color: var(--CorFonteSecundaria);
+}
+
+body{
+    background-color: var(--CorFundo);
+}
+
+button{
+    box-shadow: 0px 2px 0px var(--SombraPadrao) ; /*sombra genérica para botoes*/
+    background-color: var(--CorBotoes); /*cor geral dos botões*/
+
+}
+
+.tema{
+    background-color: var(--CorFundoSeletor); /*cor de fundo do slider*/
+    
+}
+
+.tema::-webkit-slider-thumb{
+    background: var(--CorSeletor); /* Cor do thumb do slider */
+}
+
+.res{
+    background-color: var(--FundoRes); /*Cor do input com os números*/
+    color: var(--CorFonteSecundaria);
+}
+
+.botoes{
+    background-color: var(--Botoes); /*cor da div onde estão os botoes*/
+
+}
+
+.numerais{
+    color: var(--CorFonte); /*fonte dos botoes*/
+}
+.del, .reset { /*cor e sombra dos botoes reset e DEL*/
+    background-color: var(--CorDel);
+    color: var(--CorFonteSecundaria);
+    box-shadow: 0px 2px 0px var(--SombraDel);
+    
+   
+}
+
+.equal{ /*Cor e sombra do botão =*/
+    background-color: var(--CorSeletor);
+    color: var(--CorFonteSecundaria);
+    box-shadow: 0px 2px 0px var(--SombraEqual);
+}

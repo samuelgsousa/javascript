@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+.gradiente{
+    background-image: linear-gradient(to bottom, #6743FF, #312CE8);
+    width: 265px;
+    height: 350px;
+    border-radius: 20px; 
+    margin: auto;
+    text-align: center;
+    color: white; 
+    padding: 10px;
+    display: inline-block; /* Exibe os elementos lado a lado */
+    vertical-align: top; /* Alinha os elementos no topo */
+    position: relative; /* Adicione position: relative; */
+    z-index: 2; /* Use um valor menor de z-index para colocá-lo atrás do gradiente */
+    margin-right: -38px;
+    margin-left: 20px;
+}
+#resultado {
+    background-color: #3b10f8;
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    margin: auto;
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.number {
+    text-align: center;
+    font-size: 50px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bolder;
+    margin: 0;
+}
+
+.subtext {
+    text-align: center;
+    font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0;
+    font-weight: bold;
+    color: #8e79e7;
+}
+
+#media{
+    text-align: justify;
+    margin: 20px;
+}
+
+#sumario{
+    width: 265px;
+    height: 350px;
+    border-radius: 20px; 
+    margin: auto;
+    text-align: center; 
+    padding: 10px;
+    box-shadow: 0px 0px 13px 0px black;
+    display: inline-block; /* Exibe os elementos lado a lado */
+    vertical-align: top; /* Alinha os elementos no topo */
+    position: relative; /* Adicione position: relative; */
+    z-index: 1; /* Use um valor menor de z-index para colocá-lo atrás do gradiente */
+
+}
+
+#titulo_sumario{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 42px;
+}
+
+li {
+    border: none;
+    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+
+#reacao {
+    background-color: rgb(255, 226, 226);
+    
+    
+}
+
+#memoria {
+    background-color: rgb(226, 226, 118);
+}
+
+#verbal{
+    background-color: rgb(98, 219, 138);
+}
+
+#visual{
+    background-color: #b6a7f7;
+}
+
+#botao{
+    background-color: rgb(32, 29, 39);
+    color: white;
+    
+    padding: 5px;
+    margin-left: 50px;
+    width: 70%;
+    height: 11%;
+    border-radius: 50px;
+}
+
+#botao:hover{
+    background-color: rgb(66, 61, 78);
+}
+
+#botao > p {
+    margin: 10px;
+    display: inline-block;
+}
+
+ li::before{
+    content: '\2714';
+    
+}

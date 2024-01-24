@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+/*lembrar de usar variáveis para as cores*/
+
+:root{
+    --cor0:  hsl(217, 54%, 11%);
+    --cor1: hsl(216, 50%, 16%);
+    --cor2: hsl(215, 32%, 27%);
+    --cor3: hsl(178, 100%, 50%);
+    --cor4: hsl(215, 51%, 70%);
+    --cor5: hsl(0, 0%, 100%);
+    --filtro: rgba(50, 255, 248, 0.568);
+    --font1: 'Outfit';
+}
+
+body{
+    background-color: var(--cor0);
+}
+#principal{
+    background-color: var(--cor1);
+    min-width: 120px;
+    max-width: 415px;
+    height: 750px;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin: auto;
+    
+}
+
+#imagem{
+    margin: 20px 25px 10px 20px;
+    /*min-width: 120px; tirando pois funciona sem mas não sei se vai bugar*/
+    max-width: 370px;
+    /*min-height: 120px;*/
+    max-height: 370px;
+    position: relative;
+}
+#nft{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+}
+
+#filtro {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color:var(--filtro);
+    display:none;
+    position: absolute;
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
+}
+#filtro > img {
+    display: inline-block;
+    vertical-align: auto;
+}
+#imagem:hover #filtro{
+    display: flex;
+    
+}
+
+
+
+.interno{
+    margin-left: 20px;
+    max-width: 370px;
+    height: 240px;
+    text-align: justify;
+    color: white;
+    padding-right: 15px;
+}
+
+h1 {
+    font-family: var(--font1);
+    font-weight: bolder;
+    color: var(--cor5);
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor5);
+}
+a:hover{
+    color: var(--cor3);
+}
+
+p{
+    font-size: 20px;
+    font-family: var(--font1);
+    color: var(--cor4);
+    font-weight: 700;
+}
+
+#ETH{
+    font-weight: bold;
+    color: var(--cor3);
+    display: inline-block;
+    
+    margin: 5px 20px 5px 5px;
+}
+
+#dados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#ETH::before{
+    content: url(nft-preview-card-component-main/images/icon-ethereum.svg) '\00A0\00A0';
+    vertical-align: middle;
+}
+
+#days{
+    display: inline-block;
+    box-align: right;
+    
+}
+#days::before {
+    content: url(nft-preview-card-component-main/images/icon-clock.svg)'\00A0';
+    vertical-align: middle;
+    
+}
+
+hr{
+    border-color: var(--cor4);
+}
+
+#creditos{
+    margin-top: 30px;
+    max-width: 370px;
+}
+#creditos > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+
+}
+#creditos > p {
+    display: inline-block;
+    vertical-align: middle;
+    margin:0px 15px 13% 3%;
+   
+}
+
+
+/*comentariosssss*/
